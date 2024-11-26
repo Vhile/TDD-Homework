@@ -4,6 +4,9 @@ function Greet(names){
         return "Hello, my friend.";
     }
     if (names.length == 1) {
+        if (names[0] == names[0].toUpperCase()) {
+            return "HELLO "+names+"!";
+        }
         return "Hello "+names+".";
     }
     else {
@@ -13,8 +16,10 @@ function Greet(names){
             if (i != names.length-2) s += ", ";
         }
         s += " and "+names[names.length-1]+".";
+        if (names[0] == names[0].toUpperCase()) {
+            s = s.toUpperCase().replace(".", "!");
+        }
         return s
     }
 }
-
 module.exports = Greet;

@@ -11,4 +11,10 @@ describe("Greeting test", () => {
     it("Greeting with multiple input", () => {
         expect(Greet(["Alice", "Bob", "Jerry"])).toBe("Hello Alice, Bob and Jerry.");
     });
+    it("Shouting greeting with single input", () => {
+        expect(Greet(["BARRY"])).toBe("HELLO BARRY!");
+    });
+    it("Shouting greeting with multiple input", () => {
+        expect(Greet(["BARRY", "JAY"])).toBe("HELLO BARRY AND JAY!");
+    });
 });
