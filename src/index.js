@@ -3,6 +3,7 @@ function Greet(names) {
     if (names.length == 0) {
         return "Hello, my friend.";
     }
+    names = names.flatMap(name => name.split(',').map(n => n.trim()));
     normalNames = [];
     shoutingNames = [];
     for (let i = 0; i < names.length; i++) {

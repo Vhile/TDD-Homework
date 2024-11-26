@@ -20,4 +20,7 @@ describe("Greeting test", () => {
     it("Greeting with mixed inputs", () => {
         expect(Greet(["JAY", "Maya", "Alice", "BOB", "Charlotte"])).toBe("Hello Maya, Alice and Charlotte. HELLO JAY AND BOB!");
     });
+    it("Greeting with inputs where entries contains comma", () => {
+        expect(Greet(["Jerry", "Alice, Bob"])).toBe("Hello Jerry, Alice and Bob.");
+    });
 });
