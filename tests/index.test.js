@@ -8,4 +8,7 @@ describe("Greeting test", () => {
     it("Greeting with a single input", () => {
         expect(Greet(["Bob"])).toBe("Hello Bob.");
     });
+    it("Greeting with multiple input", () => {
+        expect(Greet(["Alice", "Bob", "Jerry"])).toBe("Hello Alice, Bob and Jerry.");
+    });
 });
