@@ -17,4 +17,7 @@ describe("Greeting test", () => {
     it("Shouting greeting with multiple input", () => {
         expect(Greet(["BARRY", "JAY"])).toBe("HELLO BARRY AND JAY!");
     });
+    it("Greeting with mixed inputs", () => {
+        expect(Greet(["JAY", "Maya", "Alice", "BOB", "Charlotte"])).toBe("Hello Maya, Alice and Charlotte. HELLO JAY AND BOB!");
+    });
 });
